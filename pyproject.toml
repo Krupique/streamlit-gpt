@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "streamlit-gpt"
+version = "0.1.0"
+description = "Web application using Streamlit that serves an OpenAI LLM via API, integrates search functionality, and is deployed with Docker."
+authors = ["Krupique <krupique@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.16"
+streamlit = "^1.41.1"
+langchain-community = "^0.3.16"
+langchain-openai = "^0.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
