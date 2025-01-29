@@ -10,3 +10,8 @@ By implementing this solution, users benefit from a streamlined and efficient me
 To ensure scalability and portability, the entire project is containerized using Docker. This approach guarantees a controlled environment for deployment across different infrastructures, from local machines to cloud-based servers. The application follows best development practices, including modularized code structure, environment variable management for secure API key handling, and dependency management within a well-defined Docker environment.  
 
 With this architecture, the project combines usability, performance, and flexibility, making AI-powered text generation easily accessible and deployable.  
+
+
+```bash
+    docker build -t streamlit-gpt -f .\images\Dockerfile .
+```
