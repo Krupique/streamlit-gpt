@@ -13,5 +13,22 @@ With this architecture, the project combines usability, performance, and flexibi
 
 
 ```bash
+    # Create the image
     docker build -t streamlit-gpt -f .\images\Dockerfile .
+
+    # Create the container
+    docker run --name streamlit-container -d -p 8501:8501 streamlit-gpt
+
+    # Initialize the container
+    docker start streamlit-container
+
+    # Exec the terminal
+    docker exec -it streamlit-container bash
+
+    # Stop the container
+    docker stop streamlit-container
+
+    # Remove the container
+    docker rm streamlit-container
+
 ```
